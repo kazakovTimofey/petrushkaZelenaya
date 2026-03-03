@@ -1,0 +1,67 @@
+Запрос на получение магазинов партнеров 
+
+Метод: Get 
+URL: /api/v1/delivery/partners/stores/nearby
+
+Authorization: Bearer <token>
+
+Пример запроса на сервер: 
+GET/api/v1/delivery/partners/stores?lat=60.6578&lon=40.3142&cityId=34
+
+Пример тела ответа:
+{
+"partners": [
+{
+"id": 34,
+"name": "METRO",
+"logoUrl": "https://delivery-app.ru/logos/metro.png",
+"externalUrl": "https://metro-cc.ru",
+"deliveryType": "standart",
+"deliveryInfo": {
+"timeFrom": "21:00",
+"timeTo": "23:00",
+"today": true,
+"message": "Ближайшая доставка сегодня 21:00-23:00"
+}
+},
+{
+"id": 45,
+"name": "Ашан",
+"logoUrl": "https://delivery-app.ru/logos/auchan.png",
+"externalUrl": "https://www.auchan.ru",
+"deliveryType": "standart",
+"deliveryInfo": {
+"timeFrom": "18:00",
+"timeTo": "20:00",
+"today": true,
+"message": "Ближайшая доставка сегодня 18:00-20:00"
+}
+},
+{
+"id": 56,
+"name": "ВкусВилл",
+"logoUrl": "https://delivery-app.ru/logos/vkusvill.png",
+"extrenalUrl": "https://vkusvill.ru",
+"deliveryType": "express",
+"deliveryInfo": {
+"timeFrom": "20",
+"timeTo": "60",
+"today": true,
+"message": "Быстрая доставка от 20 до 60 минут"
+}
+},
+{
+"id": 67,
+"name": "ВИКТОРИЯ",
+"logoUrl": "https://delivery-app.ru/logos/victoria.png",
+"externalUrl": "https://victoria-group.ru",
+"deliveryType": "standart",
+"deliveryInfo": {
+"timeFrom": "17:00",
+"timeTo": "19:00",
+"today": true,
+"message": "Ближайшая доставка сегодня 17:00-19:00"
+}
+}
+]
+}
